@@ -1,0 +1,78 @@
+v1.0.10 [2020-05-04]:
+
+    • Returned back {0,0} as a potential move in "DIRS" multidimensional array in isLegal method 
+
+
+v1.0.9 [2020-05-03]:
+
+    • Added missing part of the string in the test of isLegal method
+    • Restored back condition in "else if" statement in getFinalScore method
+    • Fixed "while" loop in flipPieces method by changing operator && to ||
+
+
+v1.0.8 [2020-04-25]:
+
+    • Fixed the test for findPotentialMoves method by replacing size of gray cells from 5 to 4
+    • Deleted {0,0} as a potential move from "DIRS" multidimensional array in isLegal method 
+    • Added missing condition (d_row < BOARD_SIZE) to the "if" statement in "for each" loop in isLegal method
+    • Restored isLegal method to one of the previous implentations (replaced "do-while" loop to "while" loop with 
+    its previous conditions, added "if" statement which I deleted before)
+
+
+v1.0.7 [2020-04-22]:
+
+    • Replaced "CellStatus.Dark" to "cellstatus" parameter in an ArrayList "potentialMoves" in generateOpponent method 
+    • Added "this.cells[d_row][d_col].setValue(colour)" statement to the body of while loop in flipPieces method
+
+
+v1.0.6 [2020-04-08]:
+
+    • Changed operators in nested "for" loops in findPotentialMoves method to <
+    • Replaced "while" loop to to "do-while loop" in isLegal method
+    • Deleted {0,0} as a potential move from DIRS multidimensional array in isLegal method 
+    • Fixed getRow method which was returning column instead of row
+    • Fixed problem with ArrayIndexOutOfBoundsException error by changing "d_col <= BOARD_SIZE" to "d_col < BOARD_SIZE" 
+    and "d_row <= BOARD_SIZE" to "d_row < BOARD_SIZE" in "if" statements in isLegal method
+    • Changed conditions in "if" statement in "for each loop" in isLegal method
+    • Delete one "if" statement from "for each loop" in isLegal method
+   
+
+v1.0.5 [2020-04-03]:
+
+    • Changed wrong indictaion of column in "dir" array (was dir[0] instead of dir[1] which represents columns) 
+    in isLegal method
+    • Added missing condition "d_row <= BOARD_SIZE" to the "if" statement in isLegal method
+
+
+v1.0.4 [2020-03-25]:
+
+    • Deleted redundant "break" statement in default case in setValue method
+    • Initialised "cells" attribute in a constructor in MoveChecker class
+    • Changed operators in "if" statements of nested for loops in findPotentialMoves method from <= to ==
+    • Returned back condition "CellStatus.EMPTY" in "if" statement in findPotentialMoves method
+    • Changed operator in "if" statement in isLegal method
+    
+    
+v1.0.3 [2020-03-23]:
+
+    • Modified "if" statement in findPotentialMoves method
+    • Changed operators in "if" statement inside of the for loop in isLegal method
+    
+    
+v1.0.2 [2020-03-19]:
+
+    • Changed operators in "if" statements of nested for loops in findPotentialMoves method from <= to <
+    
+
+v1.0.1 [2020-03-17]:
+
+    • Erased condition to meet in "else" statement in getFinalScore method 
+    • Added missing semicolon
+    • Defined "cells" parameter in javadoc in isLegal method
+    • Fixed "if" statement in getFinalScore method by modifying "else" condition
+    
+    
+v1.0 [2020-03-16]:
+
+    • First major release  
+
